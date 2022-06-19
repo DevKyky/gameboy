@@ -1,35 +1,9 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background: #23272a;
-    font-family: 'Gill Sans', sans-serif;
-    color:	#5D3FD3;
-}
-
-header {
-    text-align: center;
-    color: white;
-    height: 100px;
-    padding: 2rem;
-}
-
-.brand {
-    font-style: italic;
-    font-weight: bold;
-}
-
-.app {
-    width: 100%;
-}
-
-/* Gameboy */
+// Gameboy
 
 .gameboy {
     background: #DAD6D7;
+    color:	#5D3FD3;
+    font-family: 'Gill Sans', sans-serif;
     width: 360px;
     height: 592px;
     margin-left: auto;
@@ -37,44 +11,48 @@ header {
     border-radius: 5px 5px 50px 5px;
 }
 
-/* Gameboy Screen */
+// Gameboy Screen
 
-.gameboy-screen-container {
+.gb-screen-container {
     display: inline-block;
-    margin-top: 64px;
-    margin-left: 32px;
     background: #717287;
     width: 296px;
     height: 210px;
+    margin-top: 64px;
+    margin-left: 32px;
     border-radius: 10px 10px 40px 10px;
 }
 
-.gameboy-screen {
+.gb-screen {
     display: inline-block;
-    margin-top: 31px;
-    margin-left: 62px;
     background: #8bac0f;
     width: 172px;
     height: 148px;
+    margin-top: 31px;
+    margin-left: 62px;
 }
 
-/* Gameboy Pad */
+// Gameboy brand
 
-.gameboy-brand {
+.gb-brand {
     font-family: 'Gill Sans', sans-serif;
     font-size: 10px;
     margin-top: 5px;
     margin-left: 32px;
-}
-.gameboy-brand span:first-child {
-    font-size: 20px;
-    font-style: italic;
-}
-.gameboy-brand span {
-    font-size: 8px;
+
+    span {
+        font-size: 8px;
+        
+        &:first-child {
+            font-size: 20px;
+            font-style: italic;
+        }
+    }
 }
 
-.gameboy-pad {
+// Gameboy pad
+
+.gb-pad {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
@@ -82,7 +60,9 @@ header {
     margin-right: 32px;
 }
 
-.gameboy-dpad {
+// Gameboy dpad
+
+.gb-dpad {
     display: flex;
     flex-direction: column;
     width: 84px;
@@ -104,65 +84,73 @@ header {
 .dpad-right { border-radius: 0 5px 5px 0; }
 .dpad-down { border-radius: 0 0 5px 5px; }
 
-.gameboy-button-action {
+// Gameboy pad action
+
+.gb-button-action {
     display: flex;
     justify-content: space-between;
     width: 85px;
     height: 64px;
-    transform: rotate(-30deg);
     margin-top: 12px;
+    transform: rotate(-30deg);
 }
 
 .button-a, .button-b {
+    background: #9a2257;
+    text-align: center;
     width: 36px;
     height: 36px;
-    background: #9a2257;
     border-radius: 50%;
-    text-align: center;
-}
-.button-a span, .button-b span {
-    display: block;
-    margin-top: 40px;
-    font-weight: bold;
-    font-size: 11px;
+
+    span {
+        display: block;
+        font-size: 11px;
+        font-weight: bold;
+        margin-top: 40px;
+    }
 }
 
-.gameboy-button-menu {
+// Gameboy menu
+
+.gb-button-menu {
     display: flex;
     justify-content: center;
     margin-top: 30px;
 }
 
 .button-select, .button-start {
+    background: #787679;
+    text-align: center;
     width: 42px;
     height: 10px;
-    transform: rotate(-20deg);
-    border-radius: 50px 50px 50px 50px;
-    background: #787679;
     margin-left: 10px;
-    text-align: center;
-}
-.button-select span, .button-start span {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 11px;
-    text-transform: uppercase;
+    border-radius: 50px 50px 50px 50px;
+    transform: rotate(-20deg);
+
+    span {
+        display: block;
+        font-size: 11px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
 }
 
-.gameboy-speaker {
+// Gameboy speaker
+
+.gb-speaker {
     display: flex;
-    justify-content: space-between;
     float: right;
+    justify-content: space-between;
+    width: 66px;
     margin-top: 40px;
     margin-right: 18px;
-    width: 66px;
     transform: rotate(-30deg);
 }
 
 .speaker {
+    background: #c4bebb;
     width: 6px;
     height: 50px;
     border-radius: 50px 50px 50px 50px;
-    background: #c4bebb;
 }
